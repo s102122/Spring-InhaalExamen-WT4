@@ -80,10 +80,12 @@ public class RecipeController {
 		   @RequestParam("name") String name,
 		   @RequestParam("ingredients") String ingredients
 		   ) {
+	   //create recipe object with parameters
 	   Recipe recipe = new Recipe();
 	   recipe.setName(name);
 	   recipe.setIngredients(ingredients);
 	   
+	   //create date object with current time
 	   DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 	   Date date = new Date();
 	   
